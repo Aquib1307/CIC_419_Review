@@ -1,0 +1,13 @@
+1) make the respective directory of all the log files and copy the same log file to its 
+respective directory and append the current date in the name of the file at the destination.
+Linux commands are as follows:
+
+mkdir abc.log
+mkdir def.log
+
+cp -r abc.log abc.log
+cp -r def.log def.log
+
+echo *.log
+
+echo abc-"`date +"%d%m%Y"`".log
